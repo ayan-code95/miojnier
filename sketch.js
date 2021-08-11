@@ -19,9 +19,9 @@ function setup() {
   engine  = Engine.create();
   world = engine.world;
 
-  createCanvas(900,400);
+  createCanvas(1600,800);
   ground = new Ground();
-  stand1 = new Stand(380,300,270,10);
+  stand1 = new Stand(380,450,270,10);
   stand2 = new Stand(700,200,200,10);
  
   //level one
@@ -75,7 +75,7 @@ function setup() {
 
 function draw() {
  // background(backgroundImg);  
- background("white")
+ background(0)
   Engine.update(engine);
  
   
@@ -87,7 +87,7 @@ function draw() {
   stand2.display();
   
   stroke(15);
-  fill("black")
+  fill(105,25,25)
   block1.display();
   block2.display();
   block3.display();
